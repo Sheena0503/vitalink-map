@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VitalLink 用戶體驗地圖</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fbfd;
+      color: #333;
+    }
+    header {
+      background: #0066cc;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #e9f2fb;
+      color: #003366;
+      font-size: 1rem;
+    }
+    .stage-header {
+      background-color: #b3d1f2;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th, td {
+        padding: 0.8rem;
+        border: none;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VitalLink 智能馬桶｜用戶體驗地圖</h1>
+    <p>以家庭用戶為中心的健康互動平台旅程分析</p>
+  </header>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>階段</th>
+          <th>使用者行為</th>
+          <th>介面顯示</th>
+          <th>後台支援</th>
+          <th>情緒 / 想法</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="stage-header">進入浴室</td>
+          <td>用戶透過 NFC 感應確認身份</td>
+          <td>顯示「Hi 張小姐，請如廁」</td>
+          <td>使用者資料載入、身份確認、啟動預熱</td>
+          <td>感覺私密、安全、被關心</td>
+        </tr>
+        <tr>
+          <td class="stage-header">如廁中</td>
+          <td>正常排尿，過程中自動檢測</td>
+          <td>無感式掃描進行中（無干擾 UI）</td>
+          <td>尿液光譜分析，開始即時數據比對</td>
+          <td>安心、不受打擾</td>
+        </tr>
+        <tr>
+          <td class="stage-header">結束後</td>
+          <td>站起，馬桶蓋自動閉合，殺菌程序啟動</td>
+          <td>顯示「報告產生中…請稍候」</td>
+          <td>AI 快速分析資料，開始判斷異常項目</td>
+          <td>略帶好奇或期待</td>
+        </tr>
+        <tr>
+          <td class="stage-header">查看報告</td>
+          <td>手機 App 收到推播並開啟健康概覽</td>
+          <td>顯示今日分析數據與異常提示</td>
+          <td>推送資料至雲端、家人帳號與醫療機構</td>
+          <td>獲得安心感，或若異常時產生緊張</td>
+        </tr>
+        <tr>
+          <td class="stage-header">離開浴室</td>
+          <td>清潔完成後自動歸零，進入待機</td>
+          <td>顯示「設備清潔完畢，謝謝使用」</td>
+          <td>資料加密儲存、報告備份</td>
+          <td>覺得流程快速、安全，體驗良好</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
